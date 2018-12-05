@@ -11,7 +11,7 @@
 </template>
 <script>
     import {getBetweenDateStr} from '../../assets/js/computedDate'
-    import VueCookies from 'Vue-cookies'
+    import VueCookies from 'vue-cookies'
     export default {
         props:{
             daysArray:{
