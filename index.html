@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <title>vuedemo</title>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+      }
+      a{
+        text-decoration: none;
+      }
+      img{
+        border: none;
+      }
+      html,body{
+        font-family: PingFangSC-Regular;
+        user-select: none;
+        -webkit-tap-highlight-color: transparent;
+        height: 100%;
+        width: 100%;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+  <script>
+    (function (doc, win) {
+      let docEl = doc.documentElement,
+        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+        recalc = function () {
+          let clientWidth = window.innerWidth;
+          //console.log(clientWidth);
+          if (!clientWidth) return;
+          docEl.style.fontSize = 20 * (clientWidth / 320) + 'px';
+        };
+      if (!doc.addEventListener) return;
+      win.addEventListener(resizeEvt, recalc, false);
+      doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+  </script>
+</html>
