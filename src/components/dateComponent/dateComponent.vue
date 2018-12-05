@@ -89,18 +89,11 @@
                             e.currentTarget.classList.add("check-out-day");
                             e.currentTarget.children[1].innerText="退房";
                             let timeSection=getBetweenDateStr(this.startDay,this.endDay);
-                            console.log(timeSection);
-                            //let emitArr=JSON.parse(JSON.stringify(timeSection));
                             let emitArr=[].concat(timeSection);
                             console.log(emitArr);
                             this.$emit("chooseDate",emitArr);
                             VueCookies.set("hotelChooseDate",JSON.stringify(emitArr));
                             let chooseHotel=JSON.parse(VueCookies.get("hotelChooseDate"));
-                            console.log(chooseHotel);
-
-                            //let shiftArr=timeSection.shift();
-                            //let popArr=timeSection.pop();
-                            //console.log(popArr);
                             for(let i=0;i<document.getElementsByClassName("day-item").length;i++){
                                 if(timeSection.includes(document.getElementsByClassName("day-item")[i].children[2].innerText)){
                                     document.getElementsByClassName("day-item")[i].classList.add("choose-date")
@@ -163,9 +156,6 @@
                        for(let i=0;i<nodeList.length;i++){
                            nodeList[i].classList.remove("check-in-day","check-out-day","choose-date");
                            nodeList[i].children[1].innerText=nodeList[i].children[3].innerText;
-//                           nodeList[i].classList.remove("check-in-day");
-//                           nodeList[i].classList.remove("check-out-day");
-//                           nodeList[i].classList.remove("choose-date");
                        }
                        this.startDay=item.date;
                         this.endDay="";
