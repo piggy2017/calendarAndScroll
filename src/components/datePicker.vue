@@ -50,7 +50,7 @@
     import Vue from 'vue';
     Vue.component("mt-popup", Popup);
     import dateComponent from '@/components/dateComponent/dateComponent'
-    import VueCookies from 'Vue-cookies'
+    import VueCookies from 'vue-cookies'
     export default {
         components:{
             dateComponent:dateComponent

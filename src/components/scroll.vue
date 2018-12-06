@@ -1,17 +1,17 @@
 <template>
     <div class="scroll" @scroll="myScroll">
-        <img src="../assets/image/001.jpg" alt="">
-        <img src="../assets/image/timg.jpg" alt="">
-        <img src="../assets/image/001.jpg" alt="">
-        <img src="../assets/image/wxsy1.png" alt="">
-        <img src="../assets/image/001.jpg" alt="">
-        <img src="../assets/image/wxsy_02.png" alt="">
-        <img src="../assets/image/001.jpg" alt="">
-        <img src="../assets/image/timg.jpg" alt="">
-        <img src="../assets/image/001.jpg" alt="">
-        <img src="../assets/image/wxsy1.png" alt="">
-        <img src="../assets/image/001.jpg" alt="">
-        <img src="../assets/image/wxsy_02.png" alt="">
+        <div class="img-content"> <img src="../assets/image/timg.jpg" alt=""></div>
+        <div class="img-content"> <img src="../assets/image/001.jpg" alt=""></div>
+        <div class="img-content"><img src="../assets/image/wxsy1.png" alt=""></div>
+        <div class="img-content"><img src="../assets/image/001.jpg" alt=""></div>
+        <div class="img-content"><img src="../assets/image/wxsy_02.png" alt=""></div>
+        <div class="img-content"><img src="../assets/image/001.jpg" alt=""></div>
+        <div class="img-content"><img src="../assets/image/timg.jpg" alt=""></div>
+        <div class="img-content"><img src="../assets/image/001.jpg" alt=""></div>
+        <div class="img-content"><img src="../assets/image/wxsy1.png" alt=""></div>
+        <div class="img-content"><img src="../assets/image/001.jpg" alt=""></div>
+        <div class="img-content"><img src="../assets/image/wxsy_02.png" alt=""></div>
+        <div class="img-content"><img src="../assets/image/001.jpg" alt=""></div>
     </div>
 </template>
 <script>
@@ -43,7 +43,8 @@
                     }
                     else if(H+S>nodeList[i].offsetTop && nodeList[i].offsetTop+nodeList[i].height>S){
                         nodeList[i].classList.add("radius")
-                    }else if(nodeList[i].offsetTop+nodeList[i].height<S){
+                    }
+                    else if(nodeList[i].offsetTop+nodeList[i].height<S){
                         nodeList[i].classList.remove("radius");
                     }
                     else{
@@ -60,34 +61,24 @@
     background-color #fff
     text-align center
     img{
-        width 14rem
-        height 8rem
-        margin-top 1.5rem
+        width 10rem
+        height 6rem
+        margin-top 5rem
+        transition: all .6s linear;
+        /* Firefox 4 */
+        -moz-transition:all .6s linear;
+        /* Safari and Chrome */
+        -webkit-transition:all .6s linear;
     }
     .radius{
-        animation: aniscale 0.5s;
-        -webkit-animation: aniscale 0.5s;
-        animation-fill-mode:forwards;
+        /*animation: aniscale 0.5s linear ;*/
+        /*-webkit-animation: aniscale 0.5s linear ;*/
+        /*animation-fill-mode:forwards;*/
+        transform:scale(1.6,1.5);
+        -ms-transform:scale(1.6,1.5);
+        -moz-transform:scale(1.6,1.5);
+        -webkit-transform:scale(1.6,1.5);
     }
-    @keyframes aniscale{
-        0%  {
-            width: 14rem;
-            height: 8rem;
-        }
-        100% {
-            width: 16rem;
-            height: 10rem;
-        }
-    }
-    @-webkit-keyframes aniscale{
-        0%  {
-            width: 15rem;
-            height: 8rem;
-        }
-        100% {
-            width: 16rem;
-            height: 10rem;
-        }
-    }
+
 }
 </style>

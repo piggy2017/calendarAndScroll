@@ -234,6 +234,7 @@
         color #ed4864
     }
 .dateComponent{
+    /*padding-bottom 2rem*/
     display: flex;
     flex-flow: row wrap;
     .day-item{
