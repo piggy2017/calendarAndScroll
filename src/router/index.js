@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 import datePicker from '@/components/datePicker'
 import scroll from '@/components/scroll'
+import swiper from '@/components/swiper'
 Vue.use(Router)
 
 export default new Router({
@@ -16,6 +17,11 @@ export default new Router({
           path: '/scroll',
           name: 'scroll',
           component: scroll
+      },
+      {
+          path: '/swiper',
+          name: 'swiper',
+          component: swiper
       }
   ]
 })

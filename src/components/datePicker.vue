@@ -43,6 +43,9 @@
         <div class="router-ref">
             <router-link to="/scroll">scroll加载效果</router-link>
         </div>
+        <div class="router-ref">
+            <router-link to="/swiper">swiper4.4.2</router-link>
+        </div>
     </div>
 </template>
 <script>
@@ -221,18 +224,17 @@
                 this.btnVisiby=true;
                 this.checkOutTime="请选择";
                 this.yuding="立即预定";
-
             },
             booking(){
                 if(this.dateList.length!==0){
                     console.log(this.dateList);
-                    let totalPrice=0;
-                    for(let i=0;i<this.allDays.length;i++){
-                        if(this.dateList.includes(this.allDays[i].date)){
-                            totalPrice+=this.allDays[i].price*1;
-                        }
-                    }
-                    console.log(totalPrice);
+//                    let totalPrice=0;
+//                    for(let i=0;i<this.allDays.length;i++){
+//                        if(this.dateList.includes(this.allDays[i].date)){
+//                            totalPrice+=this.allDays[i].price*1;
+//                        }
+//                    }
+                    console.log(this.totalPrice);
                 }else{
                     let instance = Toast({
                         message: '请选择入住日期',

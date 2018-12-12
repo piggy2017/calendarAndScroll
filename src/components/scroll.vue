@@ -79,6 +79,5 @@
         -moz-transform:scale(1.6,1.5);
         -webkit-transform:scale(1.6,1.5);
     }
-
 }
 </style>
