@@ -15,6 +15,9 @@
     </div>
 </template>
 <script>
+    import { Loadmore } from 'mint-ui';
+    import Vue from 'vue';
+    Vue.component("mt-loadmore", Loadmore);
     export default {
         data(){
             return{

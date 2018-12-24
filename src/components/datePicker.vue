@@ -46,6 +46,9 @@
         <div class="router-ref">
             <router-link to="/swiper">swiper4.4.2</router-link>
         </div>
+        <div class="router-ref">
+            <router-link to="/loadmore">loadmore下拉刷新</router-link>
+        </div>
     </div>
 </template>
 <script>
@@ -180,13 +183,9 @@
                     this.num=data.length-1;
                     this.dateList=data;
                     this.totalPrice=0;
-                    //let computed=data.splice(1,data.length-1);
-                    //console.log(computed);
                     let newArray=[].concat(this.dateList);
                     console.log(newArray);
                     let reduce=newArray.pop();
-                    console.log(reduce)
-                    console.log(newArray);
                     for(let i=0;i<this.allDays.length;i++){
                         if(newArray.includes(this.allDays[i].date) && this.allDays[i].full!==true){
                             this.totalPrice+=this.allDays[i].price*1;
