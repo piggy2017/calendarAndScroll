@@ -49,6 +49,9 @@
         <div class="router-ref">
             <router-link to="/loadmore">loadmore下拉刷新</router-link>
         </div>
+        <div class="router-ref">
+            <router-link to="/sweet">sweetAlert</router-link>
+        </div>
     </div>
 </template>
 <script>

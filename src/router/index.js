@@ -5,6 +5,7 @@ import datePicker from '@/components/datePicker'
 import scroll from '@/components/scroll'
 import swiper from '@/components/swiper'
 import loadmore from '@/components/loadmore'
+import sweet from '@/components/sweet'
 Vue.use(Router)
 
 export default new Router({
@@ -28,6 +29,11 @@ export default new Router({
           path: '/loadmore',
           name: 'loadmore',
           component: loadmore
+      },
+      {
+          path: '/sweet',
+          name: 'sweet',
+          component: sweet
       }
   ]
 })

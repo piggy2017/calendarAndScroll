@@ -13,6 +13,10 @@ Vue.use(MintUI)
 Vue.use(VueCookies)
 Vue.config.productionTip = false
 
+
+import VueSweetalert2 from 'vue-sweetalert2';
+
+Vue.use(VueSweetalert2);
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
