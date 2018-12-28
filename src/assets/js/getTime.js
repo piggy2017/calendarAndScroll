@@ -8,6 +8,9 @@ export function startTime()
     s=checkTime(s)
     let timeData=h+":"+m+":"+s;
     console.log(timeData);
+    setInterval(function(){
+        startTime()
+    },1000)
     return timeData;
 }
 

@@ -19,27 +19,8 @@
         },
         methods:{
             showAlert(){
-                let time=setInterval(()=>{
-                    startTime()
-                },1000);
+                let time= startTime();
                 console.log(time);
-//                this.timer=setInterval(()=>{
-//                    var today=new Date();
-//                    var h=today.getHours();
-//                    var m=today.getMinutes();
-//                    var s=today.getSeconds();
-//                    if(m<10){
-//                        m="0"+m;
-//                        return m
-//                    }
-//                    if(s<10){
-//                        s="0"+s;
-//                        return s
-//                    }
-//                    this.timeText=h+":"+m+":"+s;
-//                    console.log(this.timeText);
-//                },1000)
-//                console.log(this.timeText);
                 this.$nextTick(()=>{
                     this.$swal({
                         html: `<div>
