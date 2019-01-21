@@ -6,6 +6,7 @@ import scroll from '@/components/scroll'
 import swiper from '@/components/swiper'
 import loadmore from '@/components/loadmore'
 import sweet from '@/components/sweet'
+import link from '@/components/link'
 Vue.use(Router)
 
 export default new Router({
@@ -34,6 +35,11 @@ export default new Router({
           path: '/sweet',
           name: 'sweet',
           component: sweet
+      },
+      {
+          path: '/link',
+          name: 'link',
+          component: link
       }
   ]
 })

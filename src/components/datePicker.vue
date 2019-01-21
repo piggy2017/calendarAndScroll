@@ -52,6 +52,9 @@
         <div class="router-ref">
             <router-link to="/sweet">sweetAlert</router-link>
         </div>
+        <div class="router-ref">
+            <router-link to="/link">link</router-link>
+        </div>
     </div>
 </template>
 <script>
@@ -79,18 +82,6 @@
                 errorText:"您所选的日期包含满房日期",
                 dateArray:[
                     {
-                        month:"2018年12月",
-                        days:[
-                            {date:"2018/12/01",price:"323"}, {date:"2018/12/02",price:"323"}, {date:"2018/12/03",price:"323"}, {date:"2018/12/04",price:"323"}, {date:"2018/12/05",price:"323"},
-                            {date:"2018/12/06",price:"323"}, {date:"2018/12/07",price:"322"}, {date:"2018/12/08",price:"210"}, {date:"2018/12/09",price:"336"}, {date:"2018/12/10",price:"632"},
-                            {date:"2018/12/11",price:"299"}, {date:"2018/12/12",price:"323",full:true}, {date:"2018/12/13",price:"323"}, {date:"2018/12/14",price:"323"},{date:"2018/12/15",price:"323"},
-                            {date:"2018/12/16",price:"323"}, {date:"2018/12/17",price:"323",full:true}, {date:"2018/12/18",price:"323",full:true}, {date:"2018/12/19",price:"564"},{date:"2018/12/20",price:"323"},
-                            {date:"2018/12/21",price:"323"},{date:"2018/12/22",price:"323"},{date:"2018/12/23",price:"213"},{date:"2018/12/24",price:"323"},{date:"2018/12/25",price:"323"},
-                            {date:"2018/12/26",price:"323",full:true},{date:"2018/12/27",price:"323",full:true},{date:"2018/12/28",price:"323"},{date:"2018/12/29",price:"323"},{date:"2018/12/30",price:"323"},
-                            {date:"2018/12/31",price:"323"}
-                        ]
-                    },
-                    {
                         month:"2019年1月",
                         days:[
                             {date:"2019/01/01",price:"323"}, {date:"2019/01/02",price:"323"},{date:"2019/01/03",price:"323"}, {date:"2019/01/04",price:"323"}, {date:"2019/01/05",price:"323"},
@@ -106,10 +97,10 @@
                         month:"2019年2月",
                         days:[
                             {date:"2019/02/01",price:"323"}, {date:"2019/02/02",price:"323"},{date:"2019/02/03",price:"323"}, {date:"2019/02/04",price:"323"}, {date:"2019/02/05",price:"323"},
-                            {date:"2019/02/06",price:"323"}, {date:"2019/02/07",price:"323"}, {date:"2019/02/08",price:"323"}, {date:"2019/02/09",price:"323"}, {date:"2019/02/10",price:"323"},
-                            {date:"2019/02/11",price:"323"}, {date:"2019/02/12",price:"323"}, {date:"2019/02/13",price:"323"}, {date:"2019/02/14",price:"323"},{date:"2019/02/15",price:"323"},
+                            {date:"2019/02/06",price:"323",full:true}, {date:"2019/02/07",price:"323"}, {date:"2019/02/08",price:"323"}, {date:"2019/02/09",price:"323"}, {date:"2019/02/10",price:"323"},
+                            {date:"2019/02/11",price:"323"}, {date:"2019/02/12",price:"323",full:true}, {date:"2019/02/13",price:"323",full:true}, {date:"2019/02/14",price:"323"},{date:"2019/02/15",price:"323"},
                             {date:"2019/02/16",price:"323"}, {date:"2019/02/17",price:"323"}, {date:"2019/02/18",price:"323"}, {date:"2019/02/19",price:"323"},{date:"2019/02/20",price:"323"},
-                            {date:"2019/02/21",price:"323"},{date:"2019/02/22",price:"323"},{date:"2019/02/23",price:"323"},{date:"2019/02/24",price:"323"},{date:"2019/02/25",price:"323"},
+                            {date:"2019/02/21",price:"323"},{date:"2019/02/22",price:"323"},{date:"2019/02/23",price:"323",full:true},{date:"2019/02/24",price:"323"},{date:"2019/02/25",price:"323"},
                             {date:"2019/02/26",price:"323"},{date:"2019/02/27",price:"323"},{date:"2019/02/28",price:"323"}
                         ]
                     },
@@ -124,42 +115,63 @@
                             {date:"2019/03/26",price:"323"},{date:"2019/03/27",price:"323"},{date:"2019/03/28",price:"323"},{date:"2019/03/29",price:"323"},{date:"2019/03/30",price:"323"},
                             {date:"2019/03/31",price:"323"}
                         ]
-                    }
+                    },
+                     {
+                         month:"2019年4月",
+                             days:[
+                         {date:"2019/04/01",price:"323"}, {date:"2019/04/02",price:"323"},{date:"2019/04/03",price:"323"}, {date:"2019/04/04",price:"323"}, {date:"2019/04/05",price:"323"},
+                         {date:"2019/04/06",price:"323"}, {date:"2019/04/07",price:"323"}, {date:"2019/04/08",price:"323"}, {date:"2019/04/09",price:"323"}, {date:"2019/04/10",price:"323"},
+                         {date:"2019/04/11",price:"323"}, {date:"2019/04/12",price:"323"}, {date:"2019/04/13",price:"323"}, {date:"2019/04/14",price:"323"},{date:"2019/04/15",price:"323"},
+                         {date:"2019/04/16",price:"323"}, {date:"2019/04/17",price:"323"}, {date:"2019/04/18",price:"323"}, {date:"2019/04/19",price:"323"},{date:"2019/04/20",price:"323"},
+                         {date:"2019/04/21",price:"323"},{date:"2019/04/22",price:"323"},{date:"2019/04/23",price:"323"},{date:"2019/04/24",price:"323"},{date:"2019/04/25",price:"323"},
+                         {date:"2019/04/26",price:"323"},{date:"2019/04/27",price:"323"},{date:"2019/04/28",price:"323"},{date:"2019/04/29",price:"323"},{date:"2019/04/30",price:"323"}
+
+                     ]
+                     }
                 ],
-                allDays:[
-                    {date:"2018/12/01",price:"323"}, {date:"2018/12/02",price:"323"}, {date:"2018/12/03",price:"323"}, {date:"2018/12/04",price:"323"}, {date:"2018/12/05",price:"323"},
-                    {date:"2018/12/06",price:"323"}, {date:"2018/12/07",price:"322"}, {date:"2018/12/08",price:"210"}, {date:"2018/12/09",price:"336"}, {date:"2018/12/10",price:"632"},
-                    {date:"2018/12/11",price:"299"}, {date:"2018/12/12",price:"323",full:true}, {date:"2018/12/13",price:"323"}, {date:"2018/12/14",price:"323"},{date:"2018/12/15",price:"323"},
-                    {date:"2018/12/16",price:"323"}, {date:"2018/12/17",price:"323",full:true}, {date:"2018/12/18",price:"323",full:true}, {date:"2018/12/19",price:"564"},{date:"2018/12/20",price:"323"},
-                    {date:"2018/12/21",price:"323"},{date:"2018/12/22",price:"323"},{date:"2018/12/23",price:"213"},{date:"2018/12/24",price:"323"},{date:"2018/12/25",price:"323"},
-                    {date:"2018/12/26",price:"323",full:true},{date:"2018/12/27",price:"323",full:true},{date:"2018/12/28",price:"323"},{date:"2018/12/29",price:"323"},{date:"2018/12/30",price:"323"},
-                    {date:"2018/12/31",price:"323"},
-                    {date:"2019/01/01",price:"323"}, {date:"2019/01/02",price:"323"},{date:"2019/01/03",price:"323"}, {date:"2019/01/04",price:"323"}, {date:"2019/01/05",price:"323"},
-                    {date:"2019/01/06",price:"323",full:true}, {date:"2019/01/07",price:"323"}, {date:"2019/01/08",price:"323"}, {date:"2019/01/09",price:"323"}, {date:"2019/01/10",price:"323"},
-                    {date:"2019/01/11",price:"323"}, {date:"2019/01/12",price:"323"}, {date:"2019/01/13",price:"323"}, {date:"2019/01/14",price:"323"},{date:"2019/01/15",price:"323"},
-                    {date:"2019/01/16",price:"323"}, {date:"2019/01/17",price:"323",full:true}, {date:"2019/01/18",price:"323"}, {date:"2019/01/19",price:"323"},{date:"2019/01/20",price:"323"},
-                    {date:"2019/01/21",price:"323"},{date:"2019/01/22",price:"323"},{date:"2019/01/23",price:"323"},{date:"2019/01/24",price:"323"},{date:"2019/01/25",price:"323"},
-                    {date:"2019/01/26",price:"323"},{date:"2019/01/27",price:"323",full:true},{date:"2019/01/28",price:"323",full:true},{date:"2019/01/29",price:"323"},{date:"2019/01/30",price:"323"},
-                    {date:"2019/01/31",price:"323"},
-                    {date:"2019/02/01",price:"323"}, {date:"2019/02/02",price:"323"},{date:"2019/02/03",price:"323"}, {date:"2019/02/04",price:"323"}, {date:"2019/02/05",price:"323"},
-                    {date:"2019/02/06",price:"323"}, {date:"2019/02/07",price:"323"}, {date:"2019/02/08",price:"323"}, {date:"2019/02/09",price:"323"}, {date:"2019/02/10",price:"323"},
-                    {date:"2019/02/11",price:"323"}, {date:"2019/02/12",price:"323"}, {date:"2019/02/13",price:"323"}, {date:"2019/02/14",price:"323"},{date:"2019/02/15",price:"323"},
-                    {date:"2019/02/16",price:"323"}, {date:"2019/02/17",price:"323"}, {date:"2019/02/18",price:"323"}, {date:"2019/02/19",price:"323"},{date:"2019/02/20",price:"323"},
-                    {date:"2019/02/21",price:"323"},{date:"2019/02/22",price:"323"},{date:"2019/02/23",price:"323"},{date:"2019/02/24",price:"323"},{date:"2019/02/25",price:"323"},
-                    {date:"2019/02/26",price:"323"},{date:"2019/02/27",price:"323"},{date:"2019/02/28",price:"323"},
-                    {date:"2019/03/01",price:"323"}, {date:"2019/03/02",price:"323"},{date:"2019/03/03",price:"323"}, {date:"2019/03/04",price:"323"}, {date:"2019/03/05",price:"323"},
-                    {date:"2019/03/06",price:"323"}, {date:"2019/03/07",price:"323"}, {date:"2019/03/08",price:"323"}, {date:"2019/03/09",price:"323"}, {date:"2019/03/10",price:"323"},
-                    {date:"2019/03/11",price:"323"}, {date:"2019/03/12",price:"323"}, {date:"2019/03/13",price:"323"}, {date:"2019/03/14",price:"323"},{date:"2019/03/15",price:"323"},
-                    {date:"2019/03/16",price:"323"}, {date:"2019/03/17",price:"323"}, {date:"2019/03/18",price:"323"}, {date:"2019/03/19",price:"323"},{date:"2019/03/20",price:"323"},
-                    {date:"2019/03/21",price:"323"},{date:"2019/03/22",price:"323"},{date:"2019/03/23",price:"323"},{date:"2019/03/24",price:"323"},{date:"2019/03/25",price:"323"},
-                    {date:"2019/03/26",price:"323"},{date:"2019/03/27",price:"323"},{date:"2019/03/28",price:"323"},{date:"2019/03/29",price:"323"},{date:"2019/03/30",price:"323"},
-                    {date:"2019/03/31",price:"323"}
-                ]
+                allDays:[]
+//                allDays:[
+//                    {date:"2019/01/01",price:"323"}, {date:"2019/01/02",price:"323"},{date:"2019/01/03",price:"323"}, {date:"2019/01/04",price:"323"}, {date:"2019/01/05",price:"323"},
+//                    {date:"2019/01/06",price:"323",full:true}, {date:"2019/01/07",price:"323"}, {date:"2019/01/08",price:"323"}, {date:"2019/01/09",price:"323"}, {date:"2019/01/10",price:"323"},
+//                    {date:"2019/01/11",price:"323"}, {date:"2019/01/12",price:"323"}, {date:"2019/01/13",price:"323"}, {date:"2019/01/14",price:"323"},{date:"2019/01/15",price:"323"},
+//                    {date:"2019/01/16",price:"323"}, {date:"2019/01/17",price:"323",full:true}, {date:"2019/01/18",price:"323"}, {date:"2019/01/19",price:"323"},{date:"2019/01/20",price:"323"},
+//                    {date:"2019/01/21",price:"323"},{date:"2019/01/22",price:"323"},{date:"2019/01/23",price:"323"},{date:"2019/01/24",price:"323"},{date:"2019/01/25",price:"323"},
+//                    {date:"2019/01/26",price:"323"},{date:"2019/01/27",price:"323",full:true},{date:"2019/01/28",price:"323",full:true},{date:"2019/01/29",price:"323"},{date:"2019/01/30",price:"323"},
+//                    {date:"2019/01/31",price:"323"},
+//                    {date:"2019/02/01",price:"323"}, {date:"2019/02/02",price:"323"},{date:"2019/02/03",price:"323"}, {date:"2019/02/04",price:"323"}, {date:"2019/02/05",price:"323"},
+//                    {date:"2019/02/06",price:"323",full:true}, {date:"2019/02/07",price:"323"}, {date:"2019/02/08",price:"323"}, {date:"2019/02/09",price:"323"}, {date:"2019/02/10",price:"323"},
+//                    {date:"2019/02/11",price:"323"}, {date:"2019/02/12",price:"323",full:true}, {date:"2019/02/13",price:"323",full:true}, {date:"2019/02/14",price:"323"},{date:"2019/02/15",price:"323"},
+//                    {date:"2019/02/16",price:"323"}, {date:"2019/02/17",price:"323"}, {date:"2019/02/18",price:"323"}, {date:"2019/02/19",price:"323"},{date:"2019/02/20",price:"323"},
+//                    {date:"2019/02/21",price:"323"},{date:"2019/02/22",price:"323"},{date:"2019/02/23",price:"323",full:true},{date:"2019/02/24",price:"323"},{date:"2019/02/25",price:"323"},
+//                    {date:"2019/02/26",price:"323"},{date:"2019/02/27",price:"323"},{date:"2019/02/28",price:"323"},
+//                    {date:"2019/03/01",price:"323"}, {date:"2019/03/02",price:"323"},{date:"2019/03/03",price:"323"}, {date:"2019/03/04",price:"323"}, {date:"2019/03/05",price:"323"},
+//                    {date:"2019/03/06",price:"323"}, {date:"2019/03/07",price:"323"}, {date:"2019/03/08",price:"323"}, {date:"2019/03/09",price:"323"}, {date:"2019/03/10",price:"323"},
+//                    {date:"2019/03/11",price:"323"}, {date:"2019/03/12",price:"323"}, {date:"2019/03/13",price:"323"}, {date:"2019/03/14",price:"323"},{date:"2019/03/15",price:"323"},
+//                    {date:"2019/03/16",price:"323"}, {date:"2019/03/17",price:"323"}, {date:"2019/03/18",price:"323"}, {date:"2019/03/19",price:"323"},{date:"2019/03/20",price:"323"},
+//                    {date:"2019/03/21",price:"323"},{date:"2019/03/22",price:"323"},{date:"2019/03/23",price:"323"},{date:"2019/03/24",price:"323"},{date:"2019/03/25",price:"323"},
+//                    {date:"2019/03/26",price:"323"},{date:"2019/03/27",price:"323"},{date:"2019/03/28",price:"323"},{date:"2019/03/29",price:"323"},{date:"2019/03/30",price:"323"},
+//                    {date:"2019/03/31",price:"323"},
+//                    {date:"2019/04/01",price:"323"}, {date:"2019/04/02",price:"323"},{date:"2019/04/03",price:"323"}, {date:"2019/04/04",price:"323"}, {date:"2019/04/05",price:"323"},
+//                    {date:"2019/04/06",price:"323"}, {date:"2019/04/07",price:"323"}, {date:"2019/04/08",price:"323"}, {date:"2019/04/09",price:"323"}, {date:"2019/04/10",price:"323"},
+//                    {date:"2019/04/11",price:"323"}, {date:"2019/04/12",price:"323"}, {date:"2019/04/13",price:"323"}, {date:"2019/04/14",price:"323"},{date:"2019/04/15",price:"323"},
+//                    {date:"2019/04/16",price:"323"}, {date:"2019/04/17",price:"323"}, {date:"2019/04/18",price:"323"}, {date:"2019/04/19",price:"323"},{date:"2019/04/20",price:"323"},
+//                    {date:"2019/04/21",price:"323"},{date:"2019/04/22",price:"323"},{date:"2019/04/23",price:"323"},{date:"2019/04/24",price:"323"},{date:"2019/04/25",price:"323"},
+//                    {date:"2019/04/26",price:"323"},{date:"2019/04/27",price:"323"},{date:"2019/04/28",price:"323"},{date:"2019/04/29",price:"323"},{date:"2019/04/30",price:"323"}
+//                    ]
             }
+        },
+        created(){
+            this.getAllDates();
         },
         methods:{
             getDate(){
                 this.popupVisible=!this.popupVisible;
+            },
+            getAllDates(){
+                for(let i=0;i<this.dateArray.length;i++){
+                    this.allDays.push(...this.dateArray[i].days);
+                }
+                console.log(this.allDays);
             },
             closePopup(){
                 this.popupVisible=false;

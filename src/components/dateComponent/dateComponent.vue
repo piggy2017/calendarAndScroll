@@ -83,8 +83,8 @@
                         e.currentTarget.children[1].innerText="入住";
                         VueCookies.set("hotelFirstDate",item.date);
                     }else if(this.startDay!=="" && this.startDay!==item.date && this.endDay===""){ //已经有起始时间 第二次点击的时间不等于起始时间
-                        console.log(e.currentTarget)
                         if(new Date(item.date).getTime()>new Date( this.startDay).getTime()){  // 如果第二个时间大于起始时间
+                            console.log(e.currentTarget)
                             this.endDay=item.date;
                             e.currentTarget.classList.add("check-out-day");
                             e.currentTarget.children[1].innerText="退房";
@@ -101,6 +101,8 @@
                             }
                         }else if(new Date(item.date).getTime()<new Date(this.startDay).getTime()){ // 如果第二个时间小于起始时间
                             console.log(this.startDay);
+                            console.log(e);
+                            console.log(e.currentTarget)
                             // 判断是否在同一个月
                             if(this.startDay.substring(0,7)!==item.date.substring(0,7)){ // 没在同一个月
                                 this.endDay=this.startDay;
@@ -143,11 +145,13 @@
                             }
                         }
                     }else if(this.startDay!=="" && this.startDay===item.date && this.endDay===""){ //已经有起始时间 第二次点击的时间等于起始时间并且没有结束时间
+                        console.log(e.currentTarget);
                         e.currentTarget.classList.remove("check-in-day");
                         e.currentTarget.children[1].innerText=item.price;
                         this.startDay="";
                         VueCookies.remove("hotelChooseDate");
                     }else if(this.startDay!=="" && this.endDay!=="" ){
+                        console.log(e.currentTarget)
                         console.log(3333333333333333);
                         // 已有起始时间 结束时间，再次点击第三个按钮
                         VueCookies.remove("hotelChooseDate");
