@@ -42,10 +42,10 @@
                 let nodeList=document.getElementsByTagName("img");
                 for(let i=0;i<nodeList.length;i++){
                     if(H+S>nodeList[i].offsetTop && nodeList[i].offsetTop>S){
-                        nodeList[i].classList.add("radius")
+                        nodeList[i].classList.add("radius");
                     }
                     else if(H+S>nodeList[i].offsetTop && nodeList[i].offsetTop+nodeList[i].height>S){
-                        nodeList[i].classList.add("radius")
+                        nodeList[i].classList.add("radius");
                     }
                     else if(nodeList[i].offsetTop+nodeList[i].height<S){
                         nodeList[i].classList.remove("radius");

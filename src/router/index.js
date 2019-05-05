@@ -7,6 +7,7 @@ import swiper from '@/components/swiper'
 import loadmore from '@/components/loadmore'
 import sweet from '@/components/sweet'
 import link from '@/components/link'
+import input from '@/components/input'
 Vue.use(Router)
 
 export default new Router({
@@ -40,6 +41,11 @@ export default new Router({
           path: '/link',
           name: 'link',
           component: link
+      },
+      {
+          path: '/input',
+          name: 'input',
+          component: input
       }
   ]
 })
