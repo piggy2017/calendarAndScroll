@@ -13,7 +13,6 @@ export function startTime()
     // },1000)
     return timeData;
 }
-
 function checkTime(i)
 {
     if (i<10)
